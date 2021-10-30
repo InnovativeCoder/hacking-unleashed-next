@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import { UserContext } from "../UserContext/UserContext";
+import { userContext } from "../../components/UserContext/UserContext";
 // import RazorpayCheckout from "./RazorpayCheckout";
 import StripeContainer from "./StripeContainer";
 
 export default function Index() {
     const [modalIsOpen,setIsOpen] = useState(false);
-    const[user, setUser] = useContext(UserContext)
+    const {user, setUser} = useContext(userContext)
     const [priceList, setPriceList] = useState({
         bp:"loading ...",
         gst:"loading ...",

@@ -1,6 +1,6 @@
 // import { Link } from "next/link"
 import React from 'react'
-import "../../../styles/heroRight.module.css"
+import "../../styles/heroRight.module.css"
 
 export default function HeroRightIndex({actualPrice, fakePrice}) {
 

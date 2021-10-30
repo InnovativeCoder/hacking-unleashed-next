@@ -4,10 +4,10 @@ import Banner from "../components/Banner";
 import Counter from "../components/Counter";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
+// import { Link } from "next/link";
+import HeroRight from "../components/HeroRight/index";
 import Info from "../components/Info";
 import { userContext } from "../components/UserContext/UserContext";
-// import { Link } from "next/link";
-import HeroRight from "./HomePage/HeroRight/index";
 
 
 export default function Home() {
