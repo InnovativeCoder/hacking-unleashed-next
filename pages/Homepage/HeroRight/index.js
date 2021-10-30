@@ -1,8 +1,8 @@
-import { Link } from "next/link"
+// import { Link } from "next/link"
 import React from 'react'
-// import "./heroRight.css"
+import "../../../styles/heroRight.module.css"
 
-export default function index({actualPrice, fakePrice}) {
+export default function HeroRightIndex({actualPrice, fakePrice}) {
 
     const styles={
         colorAnimation: {
@@ -42,10 +42,11 @@ export default function index({actualPrice, fakePrice}) {
                         // {"background": `linear-gradient(90deg, #00C27F 0%, #00D2D1 100%)`}
                     } 
                         className="w-full right-0 lg:flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white md:py-4 md:text-lg md:px-10"
+                        id="btn"
                         >
-                        <Link to="/checkout">
+                        {/* <Link to="/checkout"> */}
                                 Click here to get your Book for a tiny amount {actualPrice} <span className="line-through inline">{" "}{fakePrice}</span>
-                        </Link>
+                        {/* </Link> */}
                     </button>
                     </div>
                 </div>

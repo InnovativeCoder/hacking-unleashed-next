@@ -49,7 +49,9 @@ export default function FAQ() {
                             </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
-                            {item.content}
+                            <p className="text-white">
+                                {item.content}
+                            </p>
                         </AccordionItemPanel>
                     </AccordionItem>
                 ))}
