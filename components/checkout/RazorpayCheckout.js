@@ -1,6 +1,5 @@
 import axios from "axios";
 import React from 'react';
-import logo from "../../images/Book.png";
 
 export default function RazorpayCheckout() {
     async function displayRazorpay() {
@@ -30,7 +29,7 @@ export default function RazorpayCheckout() {
             currency: currency,
             name: "Soumya Corp.",
             description: "Test Transaction",
-            image: { logo },
+            image: "/Book.png",
             order_id: order_id,
             handler: async function (response) {
                 const data = {

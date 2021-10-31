@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import { userContext } from "../../components/UserContext/UserContext";
 // import RazorpayCheckout from "./RazorpayCheckout";
-import StripeContainer from "./StripeContainer";
+import StripeContainer from "../components/checkout/StripeContainer";
+import { userContext } from "../components/UserContext/UserContext";
 
 export default function Index() {
     const [modalIsOpen,setIsOpen] = useState(false);

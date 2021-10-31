@@ -3,7 +3,7 @@ import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import React from "react";
 
-export const CheckoutForm = ({priceList, country}) => {
+const CheckoutForm = ({priceList, country}) => {
   const stripe = useStripe();
   const elements = useElements();
   const amount = country ==="India"?353:14.10;
@@ -59,7 +59,7 @@ export const CheckoutForm = ({priceList, country}) => {
   };
 
   return (
-    <div classNam="m-auto pt-10 text-center ">
+    <div className="m-auto pt-10 text-center ">
       <div className="flex justify-center ">
         <div className="flex flex-col w-full p-8 text-gray-800 bg-white rounded shadow-lg pin-r pin-y md:w-4/5 lg:w-4/5">
           <div className="flex-1">
@@ -262,3 +262,5 @@ export const CheckoutForm = ({priceList, country}) => {
     </div>
   );
 };
+
+export default CheckoutForm
