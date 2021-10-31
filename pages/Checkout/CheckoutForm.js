@@ -2,7 +2,6 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import React from "react";
-import BookImage from "../../images/Book.png";
 
 export const CheckoutForm = ({priceList, country}) => {
   const stripe = useStripe();
@@ -81,7 +80,7 @@ export const CheckoutForm = ({priceList, country}) => {
                 <tr>
                   <td className="pb-4 md:table-cell">
                     <a href="/">
-                      <img src={BookImage} className="w-20 rounded" alt="Thumbnail" />
+                      <img src="Book.png" className="w-20 rounded" alt="Thumbnail" />
                     </a>
                   </td>
                   <td>

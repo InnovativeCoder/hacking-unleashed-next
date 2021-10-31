@@ -27,8 +27,8 @@ export default function Index() {
     }
     const customStyles = {
         content : {
-          top                   : '50%',
-          left                  : '50%',
+          top                   : '30%',
+          left                  : '30%',
           right                 : 'auto',
           bottom                : 'auto',
           marginRight           : '-50%',
@@ -61,10 +61,11 @@ export default function Index() {
 
     return (
         <>
-            <div className="">
+            <div className="text-2xl uppercase text-green-400 text-center m-5">
+                Complete your purchase
             </div>
             <StripeContainer priceList={priceList} country={country}/>
-            <h1 className="text-center mt-10">OR</h1>
+            <h1 className="text-center mt-4 text-white">OR</h1>
             {
                 country==="India"?(
                 <div className="m-auto mt-10 flex place-self-center">
@@ -77,7 +78,7 @@ export default function Index() {
                 // <RazorpayCheckout />
                 ):(
                 <div className="m-auto mt-10 flex place-self-center">
-                <button onClick={openModal} className="w-30 m-auto bg-white text-gray-800 px-10 py-3 rounded">
+                <button onClick={openModal} className="w-30 m-auto bg-white text-gray-800 px-10 py-3 rounded mb-10">
                     Pay with Paypal
                 </button>
                 <Modal

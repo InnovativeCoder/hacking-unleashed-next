@@ -34,12 +34,12 @@ export default function FAQ() {
         {
             uuid: 5,
             heading: "What kind of jobs can I apply after completing the book?",
-            content: "After getting dirty with what you have learnt, you can apply for - Penetration Tester, Forensic Investigator, Defensive Security(DS), Malware Analyst, Reverse Engineer, "
+            content: "After getting dirty with what you have learnt, you can apply for - Penetration Tester, Forensic Investigator, Defensive Security(DS), Malware Analyst, Reverse Engineer."
         },
     ]
     return (
         <div className="my-10 mx-10 lg:max-w-2xl lg:m-auto" style={{ marginBottom:"10px"}}>
-            <h1 className="text-lg text-center pb-10 uppercase">Frequently Asked Questions (FAQs) </h1>
+            <h1 className="text-lg text-center pb-10 uppercase text-white">Frequently Asked Questions (FAQs) </h1>
             <Accordion allowZeroExpanded>
                 {items.map((item) => (
                     <AccordionItem key={item.uuid}>

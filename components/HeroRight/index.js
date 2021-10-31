@@ -1,6 +1,6 @@
-// import { Link } from "next/link"
-import React from 'react'
-import "../../styles/heroRight.module.css"
+import Link from 'next/link';
+import React from 'react';
+import "../../styles/heroRight.module.css";
 
 export default function HeroRightIndex({actualPrice, fakePrice}) {
 
@@ -37,17 +37,17 @@ export default function HeroRightIndex({actualPrice, fakePrice}) {
                 </p> */}
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start lg:right-0 lg:absolute lg:px-7 mx-10">
                     <div className="rounded-md shadow">
-                    <button style={
-                        styles.colorAnimation
-                        // {"background": `linear-gradient(90deg, #00C27F 0%, #00D2D1 100%)`}
-                    } 
-                        className="w-full right-0 lg:flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white md:py-4 md:text-lg md:px-10"
-                        id="btn"
-                        >
-                        {/* <Link to="/checkout"> */}
-                                Click here to get your Book for a tiny amount {actualPrice} <span className="line-through inline">{" "}{fakePrice}</span>
-                        {/* </Link> */}
-                    </button>
+                    <Link href="/checkout">
+                        <button style={
+                            styles.colorAnimation
+                            // {"background": `linear-gradient(90deg, #00C27F 0%, #00D2D1 100%)`}
+                        } 
+                            className="w-full right-0 lg:flex justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white md:py-4 md:text-lg md:px-10"
+                            id="btn"
+                            >
+                                    Click here to get your Book for a tiny amount <span className="line-through">{fakePrice}</span> {actualPrice} 
+                        </button>
+                    </Link>
                     </div>
                 </div>
                 <div className="xl:text-right text-center text-xs mt-3 text-gray-600">
