@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import React from 'react';
+import ButtonGradient from "../../components/ButtonGradient";
 import "../../styles/heroRight.module.css";
 
-export default function HeroRightIndex({actualPrice, fakePrice}) {
+export default function HeroRightIndex({ actualPrice, fakePrice }) {
 
-    const styles={
+    const styles = {
         colorAnimation: {
             color: `rgba(255,255,255)`,
             background: `linear-gradient(to right,
@@ -18,14 +18,15 @@ export default function HeroRightIndex({actualPrice, fakePrice}) {
             rgb(76, 217, 105)
             )`,
             backgroundSize: "600%",
-            fontWeight:'700',
+            fontWeight: '700',
             fontSize: "10eml",
             textAlign: "center",
             animation: `sTransition 15s linear infinite`,
-    }}
+        }
+    }
     return (
         <div className="lg:mx-28">
-            <div className="lg:absolute lg:right-0 lg:mt-10 px-4  sm:mt-12 sm:px-6 md:mt-16 lg:px-8 lg:text-right xl:mx-28" style={{textAlign:"center"}}>
+            <div className="lg:absolute lg:right-0 lg:mt-10 px-4  sm:mt-12 sm:px-6 md:mt-16 lg:px-8 lg:text-right xl:mx-28" style={{ textAlign: "center" }}>
                 <p className="lg:text-right lg:mt-3 italic xl:text-3xl text-sm text-white sm:text-lg  sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                     A pragmatic approach towards hacking
                 </p>
@@ -36,9 +37,9 @@ export default function HeroRightIndex({actualPrice, fakePrice}) {
                     A book by  Jasneet Sawhney
                 </p> */}
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start lg:right-0 lg:absolute lg:px-7 mx-10">
-                    <div className="rounded-md shadow">
-                    <Link href="/checkout">
-                        <button style={
+                    <div className="rounded-md shadow lg:mt-4">
+
+                        {/* <button style={
                             styles.colorAnimation
                             // {"background": `linear-gradient(90deg, #00C27F 0%, #00D2D1 100%)`}
                         } 
@@ -46,12 +47,12 @@ export default function HeroRightIndex({actualPrice, fakePrice}) {
                             id="btn"
                             >
                                     Click here to get your Book for a tiny amount <span className="line-through">{fakePrice}</span> {actualPrice} 
-                        </button>
-                    </Link>
+                        </button> */}
+                        <ButtonGradient fakePrice={fakePrice} actualPrice={actualPrice} />
                     </div>
                 </div>
-                <div className="xl:text-right text-center text-xs mt-3 text-gray-600">
-                    *Book doesn't promote any harmful practices, only reason to write this book is to provide education*
+                <div className="lg:text-right text-center text-xs mt-3 text-gray-600">
+                    *Book doesn't promote any harmful practices, for education purposes only*
                 </div>
             </div>
         </div>
