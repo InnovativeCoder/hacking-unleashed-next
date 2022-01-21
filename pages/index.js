@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import Counter from "../components/Counter";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
+import ScrollIndicator from "../components/ScrollIndicator"
 import Footer from "../components/Footer";
 import HeroRight from "../components/HeroRight/index";
 import Info from "../components/Info";
@@ -37,8 +38,11 @@ export default function Home() {
     getGeoInfo()
   }, [])
 
+  
+
   return (
     <>
+      <ScrollIndicator>
       <Head>
         <title>Hacking Unleashed - A pragmatic approach towards hacking</title>
         <meta charSet="utf-8" />
@@ -92,6 +96,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+        </ScrollIndicator>
     </>
   )
 }
