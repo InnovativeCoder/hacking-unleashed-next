@@ -25,19 +25,19 @@ export default function HeroRightIndex({ actualPrice, fakePrice }) {
         }
     }
     return (
-        <div className="lg:mx-28">
-            <div className="lg:absolute lg:right-0 lg:mt-10 px-4  sm:mt-12 sm:px-6 md:mt-16 lg:px-8 lg:text-right xl:mx-28" style={{ textAlign: "center" }}>
-                <p className="lg:text-right lg:mt-3 italic xl:text-3xl text-sm text-white sm:text-lg  sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        <div className="">
+            <div className=" px-4  sm:mt-12 sm:px-6 mt-16 " style={{ textAlign: "center" }}>
+                <p className=" italic xl:text-3xl text-sm text-white sm:text-lg  sm:mx-auto mt-5 md:text-xl ">
                     A pragmatic approach towards hacking
                 </p>
-                <h1 className="lg:text-right text-3xl xl:text-7xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                <h1 className="text-3xl xl:text-7xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
                     <span className="block xl:inline">HACKING UNLEASHED</span>
                 </h1>
                 {/* <p className=" lg:text-right text-base text-white sm:text-sm sm:text-center sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:mb-20">
                     A book by  Jasneet Sawhney
                 </p> */}
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start lg:right-0 lg:absolute lg:px-7 mx-10">
-                    <div className="rounded-md shadow lg:mt-4">
+                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center  mx-10">
+                    <div className="rounded-md shadow">
 
                         {/* <button style={
                             styles.colorAnimation
@@ -51,7 +51,7 @@ export default function HeroRightIndex({ actualPrice, fakePrice }) {
                         <ButtonGradient fakePrice={fakePrice} actualPrice={actualPrice} />
                     </div>
                 </div>
-                <div className="lg:text-right text-center text-xs mt-3 text-gray-600">
+                <div className=" text-center text-xs mt-3 text-gray-600">
                     *Book doesn't promote any harmful practices, for education purposes only*
                 </div>
             </div>

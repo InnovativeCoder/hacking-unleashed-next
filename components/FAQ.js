@@ -9,7 +9,7 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 
 export default function FAQ() {
-    const items=[
+    const items = [
         {
             uuid: 1,
             heading: "Is this book for beginners?",
@@ -38,13 +38,13 @@ export default function FAQ() {
         },
     ]
     return (
-        <div className="my-10 mx-10 lg:max-w-2xl lg:m-auto" style={{ marginBottom:"10px"}}>
+        <div className="my-10 mx-10 lg:max-w-2xl lg:m-auto" style={{ marginBottom: "10px", marginTop: "50px" }}>
             <h1 className="text-lg text-center pb-10 uppercase text-white">Frequently Asked Questions (FAQs) </h1>
             <Accordion allowZeroExpanded>
                 {items.map((item) => (
                     <AccordionItem key={item.uuid}>
-                        <AccordionItemHeading style={{borderRadius: "5px",background: "transparent", border:`2px solid white`}} className="mb-2 ">    
-                            <AccordionItemButton style={{background: "transparent", color: "white",}}>
+                        <AccordionItemHeading style={{ borderRadius: "5px", background: "transparent", border: `2px solid white` }} className="mb-2 ">
+                            <AccordionItemButton style={{ background: "transparent", color: "white", }}>
                                 {item.heading}
                             </AccordionItemButton>
                         </AccordionItemHeading>

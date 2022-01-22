@@ -50,6 +50,7 @@ export default function Index() {
     }
 
     useEffect(() => {
+        console.log("user is",user)
         if (user.countryName === "India") {
             setPriceList(countryPriceList.India)
             setCountry("India")
