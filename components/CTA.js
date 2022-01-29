@@ -4,9 +4,9 @@ import Counter from "./Counter";
 
 export default function CTA() {
     return (
-        <div className=" mt-10 px-2 md:px-6 lg:px-16 mx-10 " style={{ marginBottom: "10px", marginTop: "50px" }}>
-            <div className="pt-10 bg-black">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 lg:py-6 lg:flex lg:items-center lg:justify-between">
+        <div className=" mt-3 px-2  mx-5 " style={{ marginBottom: "10px", marginTop: "50px" }}>
+            <div className="pt-5 bg-black">
+                <div className="max-w-7xl mx-auto lg:py-6 lg:flex lg:items-center lg:justify-between">
                     <div>
                         <Counter className="count" end={300} suffix="+ People bought the book and are hacking succesfuly now" />
                         <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
