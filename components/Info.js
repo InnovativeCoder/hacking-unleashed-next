@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Info() {
     return (
-        <div className="m-10">
+        <div className="my-5 mx-2">
             <div className="pt-10 bg-black">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="lg:text-center">
@@ -14,7 +14,6 @@ export default function Info() {
                         Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
                     </p> */}
                     </div>
-
                     <div className="mt-10">
                         <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                             <div className="flex">
@@ -50,7 +49,7 @@ export default function Info() {
                                         Deciphering Kali Linux and it's tools
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-300">
-                                        This module will slowly uncover the power of true hacking, the dark areas which will unleash the power of your computer system and make you realise the truth of online world.
+                                        This module will slowly uncover the <span className="underline decoration-pink-600 decoration-wavy decoration-2">power of true hacking,</span> the dark areas which will unleash the power of your computer system and make you realise the truth of online world.
                                     </dd>
                                 </div>
                             </div>

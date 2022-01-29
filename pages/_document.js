@@ -12,6 +12,14 @@ export default class MyDocument extends Document {
                         async
                         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
                     />
+                    {/* <!-- Start of Async ProveSource Code --> */}
+                    <script type="text/javascript" dangerouslySetInnerHTML={{
+                        __html: `
+                    !function(o,i){window.provesrc && window.console && console.error && console.error("ProveSource is included twice in this page."), provesrc = window.provesrc = { dq: [], display: function () { this.dq.push(arguments) } }, o._provesrcAsyncInit = function () { provesrc.init({ apiKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2MWYwMmU1MzYyYWZjMjI3YWM0YjY0YTMiLCJpYXQiOjE2NDMxMzA0NTJ9.TuIYSXwtlwuMUR4Zwv3GMoVPNCo8Z9oyN9gxrh9uJl4", v: "0.0.4" }) };var r=i.createElement("script");r.type="text/javascript",r.async=!0,r["ch"+"ar"+"set"]="UTF-8",r.src="https://cdn.provesrc.com/provesrc.js";var e=i.getElementsByTagName("script")[0];e.parentNode.insertBefore(r,e)}(window,document)
+                    `,
+                    }}
+                    />
+                    {/* <!-- End of Async ProveSource Code --> */}
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `

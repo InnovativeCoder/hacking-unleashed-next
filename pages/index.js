@@ -3,13 +3,14 @@ import Head from 'next/head';
 import Link from 'next/link';
 import React, { useContext, useEffect } from 'react';
 import Banner from "../components/Banner";
-import Counter from "../components/Counter";
+import BookIndex from "../components/BookIndex";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import HeroRight from "../components/HeroRight/index";
 import Info from "../components/Info";
 import ScrollIndicator from "../components/ScrollIndicator";
+// import Tools from "../components/Tools";
 import { userContext } from "../components/UserContext/UserContext";
 
 
@@ -77,7 +78,7 @@ export default function Home() {
           <div className="">
             <div className="">
               <Link href="/checkout">
-                <img className="object-contain sm:h-48 md:h-96 " style={{ maxWidth: "80%", margin: "auto" }} src="heroimage.png" alt="" />
+                <img className="object-contain sm:h-48 md:h-96 drop-shadow-2xl shadow-pink-500/70" style={{ maxWidth: "80%", margin: "auto" }} src="heroimage.png" alt="" />
                 {/* <video controls src={IntroVideo}/> */}
                 {/* <div className="xl:65 object-contain sm:h-48 md:h-96 lg:w-75 lg:h-96 mt-10" style={{maxWidth:"80%", margin:"50px auto"}}>
                         <iframe allow="autoplay" title="vid" class="video-player-container spotlightr" data-playerid="MTA3ODk4Mw==" allowtransparency="true" style={{maxWidth:"100%"}} name="videoPlayerframe" allowfullscreen="true" src="https://hack.cdn.spotlightr.com/watch/MTA3ODk4Mw==?aspect=1.78" watch-type="" url-params="aspect=1.78" frameborder="0" scrolling="no"> </iframe>
@@ -89,7 +90,8 @@ export default function Home() {
             }
           </div>
           <Info />
-          <Counter className="count" end={300} suffix="+ People bought the book and are satified with the quality " />
+          {/* <Tools /> */}
+          < BookIndex />
           <CTA />
           <FAQ />
           <div className="mt-10">

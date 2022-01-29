@@ -39,7 +39,7 @@ export default function FAQ() {
     ]
     return (
         <div className="my-10 mx-10 lg:max-w-2xl lg:m-auto" style={{ marginBottom: "10px", marginTop: "50px" }}>
-            <h1 className="text-lg text-center pb-10 uppercase text-white">Frequently Asked Questions (FAQs) </h1>
+            <h1 className="text-lg text-center pb-10 uppercase text-white">What the FAQ (Frequently Asked Questions ) 😉 </h1>
             <Accordion allowZeroExpanded>
                 {items.map((item) => (
                     <AccordionItem key={item.uuid}>
