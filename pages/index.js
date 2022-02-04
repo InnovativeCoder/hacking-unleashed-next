@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="">
             <div className="">
-              <Link href="/checkoutnew">
+              <Link href="/checkout">
                 <img className="object-contain sm:h-48 md:h-96 drop-shadow-2xl shadow-pink-500/70" style={{ maxWidth: "80%", margin: "auto" }} src="heroimage.png" alt="" />
                 {/* <video controls src={IntroVideo}/> */}
                 {/* <div className="xl:65 object-contain sm:h-48 md:h-96 lg:w-75 lg:h-96 mt-10" style={{maxWidth:"80%", margin:"50px auto"}}>
